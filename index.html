@@ -19,8 +19,7 @@
     font-family:'Open Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
     line-height:1.75;font-size:16.5px;-webkit-text-size-adjust:100%}
   .wrap{max-width:760px;margin:0 auto;padding:0 18px 60px}
-  header.hero{text-align:center;padding:34px 0 8px}
-  .hero img{width:100%;max-width:560px;border-radius:18px;box-shadow:0 10px 30px rgba(38,51,44,.18)}
+  header.hero{text-align:center;padding:26px 0 8px}
   h1{font-size:30px;font-weight:800;margin:22px 0 6px;color:var(--green-d);line-height:1.35}
   .sub{color:var(--muted);font-size:15px;margin:0 0 14px}
   .meta-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0 4px}
@@ -68,12 +67,23 @@
     h1{font-size:25px}
     .facts td.k{width:82px}
   }
+
+  details.card > summary{list-style:none;cursor:pointer;font-size:19px;font-weight:700;color:#1f3a2d;padding:2px 0 8px;display:flex;align-items:baseline;gap:10px}
+  details.card > summary::-webkit-details-marker{display:none}
+  details.card > summary::before{content:'\25B8';flex:none;font-size:14px;color:#4b7a63;transition:transform .18s ease}
+  details.card[open] > summary::before{transform:rotate(90deg)}
+  details.card > summary:focus-visible{outline:2px solid #4b7a63;outline-offset:3px;border-radius:6px}
+  details.sect{margin:26px 0 8px;border-top:2px solid #d8e2da;padding-top:14px}
+  details.sect > summary{list-style:none;cursor:pointer;font-size:22px;font-weight:800;color:#1f3a2d;display:flex;align-items:baseline;gap:10px}
+  details.sect > summary::-webkit-details-marker{display:none}
+  details.sect > summary::before{content:'\25B8';flex:none;font-size:16px;color:#4b7a63;transition:transform .18s ease}
+  details.sect[open] > summary::before{transform:rotate(90deg)}
+  details.sect > summary:focus-visible{outline:2px solid #4b7a63;outline-offset:3px;border-radius:6px}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="hero">
-  <img src="hero-banner.jpg" alt="איור: ספר תורה פתוח ואוזניות" width="900" height="450">
   <h1>הקלטות קריאת תורה בטעמים</h1>
   <p class="sub">מקורות, האזנה וזכויות — דוח מחקר · נבדק מול המקורות ב-25 באוקטובר 2026</p>
   <div class="meta-chips">
@@ -90,8 +100,8 @@
 </div>
 <h2 class="section">אשכנז — המקורות המובילים</h2>
 
-<div class="card">
-  <h3>1 · קול הלשון — קריאת התורה, אשכנז</h3>
+<details class="card">
+  <summary>1 · קול הלשון — קריאת התורה, אשכנז</summary>
   <div class="tags"><span class="tag">141 הקלטות</span><span class="tag">קריאה איטית ורגילה לכל פרשה</span><span class="tag warn">פרטי וחינוכי בלבד</span></div>
   <p>ספריית האודיו התורנית מחזיקה 141 הקלטות תחת «קריאת התורה - אשכנז»: לכל פרשה קריאה איטית (כ-35 דק'), קריאה רגילה (כ-19 דק') וקריאת שני וחמישי, וגם הפטרות. זהות הקורא אינה מופיעה בעמוד הרשימה. אומת בפועל 25.10: הנגן באתר מתנגן וקובץ ה-mp3 זורם.</p>
   <table class="facts">
@@ -104,10 +114,10 @@
     <a class="btn" href="https://www.kolhalashon.com/en/regularSite/playShiur/31503582">▶ קריאה רגילה — פרשת נשא</a>
   </p>
   <p class="note">האתר אינו מציע הטמעת נגן ותנאיו מותירים שימוש פרטי בלבד — לכן כפתורי האזנה ישירה באתרם, לא נגן מוטמע.</p>
-</div>
+</details>
 
-<div class="card">
-  <h3>2 · חב"ד — הרב מיכאל סלבין</h3>
+<details class="card">
+  <summary>2 · חב"ד — הרב מיכאל סלבין</summary>
   <div class="tags"><span class="tag">תורה מלאה + הפטרות</span><span class="tag">נגן מובנה כאן בדף</span><span class="tag warn">חינוכי בלבד</span></div>
   <p>כל התורה וההפטרות, כולל כלי אינטראקטיבי עם מעקב טקסט בזמן הקריאה. אותן הקלטות פורסמו גם כפודקאסט בספוטיפיי ובאפל פודקאסטס. אומת בפועל 25.10: הנגן באתרם מתנגן וקובץ ה-mp3 זורם.</p>
   <table class="facts">
@@ -119,10 +129,10 @@
 <script type="text/javascript" src="https://embed.chabad.org/multimedia/mediaplayer/embedded/embed.js.asp?aid=982066&width=auto&height=auto&HideVideoInfo=false"></script>
   </div>
   <p class="note">קריאת תורה אמיתית — פרשת בראשית מלאה. נגן ההטמעה הרשמי של chabad.org (כפתור Embed בנגן שלהם); האודיו מוזרק מהשרתים שלהם.</p>
-</div>
+</details>
 
-<div class="card">
-  <h3>3 · דרגה — הרב ברוך כוכב</h3>
+<details class="card">
+  <summary>3 · דרגה — הרב ברוך כוכב</summary>
   <div class="tags"><span class="tag">מוצר ישראלי</span><span class="tag">4 נוסחים כולל אשכנזי-ספרד</span><span class="tag warn">מסחרי — דורש רישוי</span></div>
   <p>מערכת לימוד טעמי מקרא עם הקלטות של בעלי קריאה. הנוסח אשכנזי-ספרד הוא הגייה ישראלית עם מנגינת אשכנז — השילוב שהוגדר לאפליקציה. קיימים גם מרוקאי, ספרדי-ירושלמי והיגוי אשכנזי. קריאות התורה שלהם (קורא: הרב ברוך כוכב) נמכרות בלבד: ספר עם דיסק ותוכנה לפרשה והפטרה ₪59–149, מארז mp3 של כל הפרשות וההפטרות ₪390. לא נמצאה דוגמת קריאת תורה פומבית באתר או בערוץ שלהם.</p>
   <table class="facts">
@@ -134,10 +144,10 @@
     <iframe src="https://www.youtube.com/embed/yC62aV3vVs8" title="דרגה — תיקון קוראים וירטואלי, מגילת אסתר פרק א" loading="lazy" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
   </div>
   <p class="note">השוואת סגנון בלבד: קריאת מגילת אסתר פרק א בטעמים (תיקון וירטואלי, נוסח אשכנזי ספרד) — מנגינת מגילה, <b>לא</b> קריאת תורה. דוגמת תורה אמיתית שלהם צריכה להתבקש בפנייה.</p>
-</div>
+</details>
 
-<div class="card">
-  <h3>4 · בר מצווה — המדריך הכולל (אייל ימין, חזן)</h3>
+<details class="card">
+  <summary>4 · בר מצווה — המדריך הכולל (אייל ימין, חזן)</summary>
   <div class="tags"><span class="tag">3 נוסחים</span><span class="tag">מחולק לעליות</span><span class="tag warn">זכויות לא מוגדרות</span></div>
   <p>קריאות תורה והפטרות בנוסחים אשכנזי, ספרדי ומרוקאי, מחולקות לעליות, עם נגן mp3 מובנה לכל עלייה. אומת בפועל 25.10: עלייה ראשונה של בראשית בנוסח אשכנזי מתנגנת. זהות הקורא בהקלטות לא אומתה.</p>
   <table class="facts">
@@ -147,26 +157,26 @@
   <p class="links"><a href="https://www.bar-mitzva.org/kriot">בחירת פרשה ועלייה</a> · <a href="https://www.bar-mitzva.org/contact">צור קשר</a></p>
   <p><a class="btn" href="https://www.bar-mitzva.org/kriot/akb-b001">▶ בראשית — עלייה ראשונה, אשכנזי</a></p>
   <p class="note">האתר אינו מציע הטמעת נגן — כפתור האזנה ישירה באתרם.</p>
-</div>
-<div class="card">
-  <h3>5 · Masorti UK ו-Leo Baeck College</h3>
+</details>
+<details class="card">
+  <summary>5 · Masorti UK ו-Leo Baeck College</summary>
   <div class="tags"><span class="tag">הוראה לכל משפחת טעמים</span><span class="tag warn">לא תורה מלאה</span></div>
   <p>הקלטות בטעם אשכנזי מערבי לכל משפחת טעמים, עם תרשימים ותעתיק — בנק צלילי-טעמים להוראה, לא קריאת פרשות. מבוסס על Learn to Leyn של ד"ר חני סמית, © Leo Baeck College 2024, משאב הנמכר בנפרד.</p>
   <table class="facts">
     <tr><td class="k">קשר</td><td>bex@masorti.org.uk (מופיע בעמוד)</td></tr>
   </table>
   <p class="links"><a href="https://masortiprayer.org.uk/torah-tropes/">האזנה</a></p>
-</div>
+</details>
 
-<div class="card">
-  <h3>6 · World ORT — Navigating the Bible II</h3>
+<details class="card">
+  <summary>6 · World ORT — Navigating the Bible II</summary>
   <div class="tags"><span class="tag warn">האתר המקורי מת ב-2022</span><span class="tag">ההקלטות שרדו בארכיון</span></div>
   <p>במשך יותר מעשרים שנה היה הסטנדרט המקוון לקריאת תורה אשכנזית (לפי Hebcal). האתר הפסיק לעבוד בקיץ 2022; ההקלטות נגישות בעותק הארכיון, ובעמוד מופיע Copyright © 1997-2000 World ORT. ניתן לפנות ל-World ORT לאישור שימוש.</p>
   <p class="links"><a href="https://web.archive.org/web/20110305105515/http:/bible.ort.org/">עותק הארכיון</a> · <a href="https://www.hebcal.com/home/498/torah-trope-chanting-audio-leyning">הדיווח של Hebcal</a></p>
-</div>
+</details>
 
-<div class="card rejected">
-  <h3>7 · ויקימדיה קומונס — הקלטות עשהאל</h3>
+<details class="card rejected">
+  <summary>7 · ויקימדיה קומונס — הקלטות עשהאל</summary>
   <div class="tags"><span class="tag">CC BY-SA 3.0</span><span class="tag">כיסוי אשכנז חלקי</span><span class="tag warn">נפסל באזנה 25.10.26</span></div>
   <div class="callout" style="margin:12px 0"><b>נפסל באזנה:</b> מלאכי סימן תגובה שלילית על דגימת ההאזנה ב-25 באוקטובר 2026 — המקור נפסל מהתאמה לאפליקציה. הסיבה הספציפית לא צוינה. הפסילה היא על התאמת הסגנון בלבד; הרישיון הפתוח עצמו תקף לכל מי שירצה להשתמש בו.</div>
   <p>תורה והפטרות חתוכות לעליות ולקטעים: 1,124 קבצים, מהם 214 בגרסה המסומנת Ashkenaz — כל פרשיות דברים, בראשית, נח, חיי שרה, צו, בלק וקריאות מיוחדות (ראש חודש, תעניות, פורים, שמחת תורה). לכל קטע קיימת גם גרסה נוספת ללא תיוג; מה הנוסח או ההגייה שלה — דורש האזנה. קבצי Ogg (ניתנים להמרה ל-MP3), הועלו ב-2005 ומושמעים גם בויקימקור העברי והאנגלי.</p>
@@ -177,17 +187,19 @@
     <tr><td class="k">מחבר</td><td>לא מוצהר בדפי הקבצים; הייחוס בפועל למשתמש Asael</td></tr>
   </table>
   <p class="links"><a href="https://upload.wikimedia.org/wikipedia/commons/d/db/Aa_Genesis_Bereshit-1_Asael_Ashkenaz.oga">האזנה: בראשית, עלייה ראשונה</a> · <a href="https://commons.wikimedia.org/wiki/File:Aa_Genesis_Bereshit-1_Asael_Ashkenaz.oga">דף הקובץ והרישיון</a> · <a href="https://commons.wikimedia.org/wiki/Category:Torah_and_Haftarah_cantillation_by_Asael">הקטגוריה המלאה</a> · <a href="http://creativecommons.org/licenses/by-sa/3.0/">נוסח הרישיון</a></p>
-</div>
+</details>
 
-<h2 class="section">מה חדש מול דוח ה-8 באוקטובר</h2>
+<details class="sect">
+  <summary>מה חדש מול דוח ה-8 באוקטובר</summary>
 <ul class="clean">
   <li>חדש לגמרי בסבב הזה: עשהאל/קומונס, קול הלשון, חב"ד/סלבין (כולל פודקאסט ספוטיפיי), דרגה, בר מצווה/אייל ימין, Masorti, טעמא (מרוקו), koshermusic (תימן), pizmonim (סוריה), לונדון S&amp;P, DJSA, הספרייה הלאומית.</li>
   <li>עדכוני סטטוס: Navigating the Bible של ORT מת ב-2022. TropeTrainer עבר ל-Hazzan Solutions — כל הזכויות שמורות, מבוסס מנוי.</li>
   <li>מהדוח הקודם, ללא שינוי: PocketTorah (רישיון פתוח CC BY-SA), TorahSages, dafyomireview (רישיון לא מוגדר), ben13.</li>
   <li>בין המקורות שנבדקו בסבב הזה, רישיון פתוח המאפשר שימוש מסחרי בתנאים נמצא רק אצל עשהאל/קומונס ו-PocketTorah.</li>
 </ul>
-
-<h2 class="section">מסורתות נוספות</h2>
+</details>
+<details class="sect">
+  <summary>מסורתות נוספות</summary>
 <div class="rows">
   <div class="row"><b>תימן</b> — koshermusic.org: תורה והפטרות מלאות בהקלטת עמיר צברי, הורדה חינם (1.5GB). תנאי שימוש לא מוגדרים.</div>
   <div class="row"><b>מרוקו</b> — טעמא tht.co.il: תורה והפטרות מלאות בהקלטת הרב נתנאל חן אוחנה, בהסכמת הראשל"צ. האזנה באתר; זכויות לא מוגדרות.</div>
@@ -197,16 +209,18 @@
   <div class="row"><b>ספוטיפיי — לימוד טעמים</b> — הרב אברהם בן-חיים: אלבומי לימוד טעמי תורה. בספוטיפיי לא נמצא אלבום אשכנזי מלא נוסף מעבר לסלבין/חב"ד.</div>
 </div>
 <p class="links"><a href="https://koshermusic.org/products/%D7%A7%D7%A8%D7%99%D7%90%D7%AA-%D7%94%D7%AA%D7%95%D7%A8%D7%94-%D7%AA%D7%99%D7%9E%D7%A0%D7%99-%D7%A2%D7%9E%D7%99%D7%A8-%D7%A6%D7%91%D7%A8%D7%99">תימן</a> · <a href="https://tht.co.il/">מרוקו</a> · <a href="https://www.pizmonim.org/taamim.php">סוריה</a> · <a href="https://londonsephardimusic.org/">לונדון</a> · <a href="https://www.youtube.com/watch?v=wh2ppJ2GzFk">חבושה</a> · <a href="https://open.spotify.com/track/30uW5WmFKrFcvHmPAH13Ck">בן-חיים</a></p>
-
-<h2 class="section">מוסדות וארכיונים</h2>
+</details>
+<details class="sect">
+  <summary>מוסדות וארכיונים</summary>
 <ul class="clean">
   <li><b>הספרייה הלאומית</b> — ארכיון הצליל מחזיק הקלטות אתנוגרפיות של טעמי מקרא; האזנה בבניין הספרייה בלבד, ורישוי דרכם בלבד.</li>
   <li><b>DJSA</b> (ארכיון הצליל היהודי של דרטמות') — סדרת אלבומי Torah cantillation (בנו וייס ואחרים); דורש הרשמה, להאזנה אקדמית.</li>
   <li><b>archive.org</b> — הקלטות תקליטי 78 סל"ד היסטוריות, וקריאות חופשיות במסורת חלב (ברוב התורה קריאה מדוברת, לא בטעמים).</li>
 </ul>
 <p class="links"><a href="https://www.nli.org.il/he/items/NNL_MUSIC_AL990002423660205171/NLI">דוגמה בספרייה הלאומית</a> · <a href="https://djsa.dartmouth.edu/albums/689">DJSA</a> · <a href="https://archive.org/details/78_notes-for-reading-the-torah-and-the-haftaroth_abraham-davis_gbia0397853a">archive.org</a></p>
-
-<h2 class="section">מה לא אומת</h2>
+</details>
+<details class="sect">
+  <summary>מה לא אומת</summary>
 <ul class="clean">
   <li>סגנון ואיכות ההקלטה לא נשפטו באף מקור — נדרשת האזנה של אדם.</li>
   <li>מהי הגרסה הלא-מתוייגת בקטעי עשהאל (הנוסח או ההגייה שלה).</li>
@@ -223,3 +237,4 @@
 </div>
 </body>
 </html>
+</details>
